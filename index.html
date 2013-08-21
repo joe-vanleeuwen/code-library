@@ -4,50 +4,93 @@
 <head>
 	<title>codestuff</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html&skin=default"></script> -->
 </head>
 <body>
 
 	<header>
 		<div class="top"></div>
 		<h1>this is where stuff happens</h1>
-		<!-- <h1>This Is Where Stuff Happens</h1> -->
 		<div class="bottom"></div>
-
 	</header>
 
 	<div class="wrapper">
 		<div class="container">
 			<nav>
 				<ul>
-					<li><a href="#buttons">buttons</a></li>
-					<li><a href="">other stuff</a></li>
-					<li><a href="">other stuff</a></li>
-					<li><a href="">other stuff</a></li>
-					<li><a href="">other stuff</a></li>
+					
+					<a href="#buttons"><li>buttons</li></a>
+					<a href="#ribbon"><li>ribbons</li></a>
+					<a href="#other-stuff"><li>other stuff</li></a>
+					<a href="#other-stuff"><li>other stuff</li></a>
+					<a href="#other-stuff"><li>other stuff</li></a>
+					
 				</ul>
 			</nav> <!-- end nav -->
 
 			<div class="examples">
 				<div class="buttons">
-					<div class="rect">
-						<h2><a name="buttons">buttons:</a> </h2>
-						<hr>
-						<h3>fa dayz</h3>
-						<a href="#" class="rect-button maroon">Button</a>
-						<a href="#" class="rect-button blue">Button</a>
-						<a href="#" class="rect-button green">Button</a>
+					<h2><a name="buttons">buttons:</a></h2>
+					<hr>
+					<h3>fa dayz</h3>
+					<p>check out these bad boys</p>
+					<div class="rectangle">
+						<a href="#buttons" class="rectangle-button maroon">Button</a>
+						<a href="#buttons" class="rectangle-button blue">Button</a>
+						<a href="#buttons" class="rectangle-button green">Button</a>
 					</div>
+
+					<div class="implement">
+						.rectangle-button.red /.blue /.green
+					</div>
+					<p>got some gradient ninja power goin' on here</p>
 					<div class="gradient">
-						<a href="#" class="gradient-button">Push This Button</a>
+						<a href="#buttons"><div class="gradient-button">Push This Button</div></a>
 					</div>
+					<div class="implement">
+						.gradient-button
+					</div>
+					<p>smooth edges</p>
 					<div class="circle">
-						<a href="#" class="circle-button">1</a>
-						<a href="#" class="circle-button light-blue">1</a>
-						<a href="#" class="circle-button light-yellow">1</a>
+						<a href="#buttons" class="circle-button light-grey">1</a>
+						<a href="#buttons" class="circle-button light-blue">1</a>
+						<a href="#buttons" class="circle-button light-yellow">1</a>
+					</div>
+					<div class="implement">
+						.circle-button.light-grey /.light-blue /.light-yellow
 					</div>
 				</div> 
 
-			</div> <!-- end .examples -->
+				<div class="ribbon"> 
+					<h2><a name="ribbon">ribbons:</a></h2>
+					<hr>
+					<h3>sweet</h3>
+					<p>implement these and you're gettin' somewhere</p>
+					<div class="ribbon-left-side"></div
+	 				><div class="ribbon-right-side">MESSAGE</div>
+	 				<div class="implement"> 
+	 					<!-- <pre class="prettyprint">
+	 						<div class="ribbon"> 
+		 						<div class="ribbon-left-side"></div
+		 						><div class="ribbon-right-side">MESSAGE</div>
+		 					</div>
+		 				</pre> -->
+	 					<pre>&lt;div class="ribbon"&gt;
+	&lt;div class="ribbon-left-side"&gt;&lt;/div
+	&gt;&lt;div class="ribbon-right-side"&gt;MESSAGE&lt;/div&gt;
+&lt;/div&gt;</pre>
+						
+					</div>
+				</div>
+				<div class="other-stuff">
+					<h2><a name="other-stuff">other stuff:</a></h2>
+					<hr>
+					<h3>sweet</h3>
+					<p>implement these and you're gettin' somewhere</p>
+				</div>
+
+			</div> <!-- end .examples --> 
 
 		</div> <!-- end .container -->
 		

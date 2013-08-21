@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: helvetica, arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -47,6 +48,10 @@ hr {
 	border-top: 1px solid #003679;
 }
 
+p {
+	color: #003679;
+}
+
 .top {
 	height: 80px;
 	min-width: 940px;
@@ -70,6 +75,8 @@ hr {
 	margin: 0 auto;
 }
 
+/* nav :: nav :: nav :: nav :: nav :: nav :: nav */
+
 nav {
 	width: 250px;
 	margin-right: 145px;
@@ -80,7 +87,6 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	color: orange;
 }
 
 li {
@@ -89,7 +95,7 @@ li {
 	border-top: 1px solid #FF7D6B;
 }
 
-li:last-child {
+a:last-child li {
 	border-bottom: 1px solid #FF7D6B;
 }
 
@@ -106,26 +112,40 @@ nav a {
 	color: #003B81;
 }
 
+/* spacing :: spacing :: spacing :: spacing :: spacing :: */
+
 .examples {
 	width: 700px;
 	margin-bottom: 100px;
 	display: inline-block;
 }
 
-/* button :: button ::*button ::/button */
+.implement {
+	color: #003679;
+	font-size: 1.3em;
+	font-family: monospace;
+	padding: 0 20px;
+	margin: 20px 0 50px;
+	line-height: 2.75em;
+	border-radius: 10px;
+	background: #DFE6EE;
+	box-shadow: inset 0 3px 0px -2px #C7C7C7;
+}
 
-.rect {
+/* button :: button ::*button :: button */
+
+.rectangle {
 	margin-bottom: 10px;
 }
 
-.rect-button {
+.rectangle-button {
 	width: 138px;
 	height: 37px;
 	background: #636464;
 	color: #FFF;
 	font-size: .9em;
 	line-height: 2.5em;
-	margin: 0 21px 10px 0;
+	margin-right: 21px;
 	text-align: center;
 	display: inline-block;
 	border-radius: 3px;
@@ -134,75 +154,145 @@ nav a {
 	text-shadow: 0 1px 0 #3F3F3F;
 }
 
-.rect-button.maroon {
+.rectangle-button.maroon {
 	background: #990000;
 	border-color: #460000;
 }
 
-.rect-button.blue {
+.rectangle-button.blue {
 	background: #00397F;
 	border-color: #001733;
 }
 
-.rect-button.green {
+.rectangle-button.green {
 	background: #1A774C;
 	border-color: #00331B;
 }
 
-.circle {
-	margin-bottom: 10px;
-	display: inline-block;
+.rectangle-button.maroon:hover {
+	background: #AA0000;
+}
+
+.rectangle-button.blue:hover {
+	background: #004A8F;
+}
+
+.rectangle-button.green:hover {
+	background: #1A874C;
 }
 
 .circle-button {
 	height: 37px;
 	width: 37px;
-	color: #787878;
 	font-size: 1.1em;
 	font-weight: bold;
 	text-align: center;
 	line-height: 2.1em;
-	margin: 7px 38px 0 0;
+	margin-right: 40px;
 	border-radius: 50%;
+	display: inline-block;
+}
+
+.circle-button.light-grey {
+	color: #787878;
 	background: linear-gradient(to bottom, rgb(211, 211, 211) 1%,rgb(253,253,253) 100%);
 	border: 1px solid #8E8C87;
 	box-shadow: inset 0 2px 2px 0px #FFF, inset 0 -4px 2px -3px #A8A7A3, 0 1px 2px 0px #A2A09C;
-	display: inline-block;
 }
 
 .circle-button.light-blue {
 	color: #4A86B6;
 	background: linear-gradient(to bottom, rgb(202, 232, 252) 1%,rgb(253,253,253) 100%);
+	border: 1px solid #6F99AD;
 	box-shadow: inset 0 2px 2px 0px #FFF, inset 0 -4px 2px -3px #529AA8, 0 1px 2px 0px #8699A0;
 }
 
 .circle-button.light-yellow {
-	color: #7B8344;;
-	background: linear-gradient(to bottom, rgb(247, 239, 198) 1%,rgb(253,253,253) 100%);
+	color: #7B8344;
+	background: linear-gradient(to bottom, rgb(255, 255, 173) 1%,rgb(253,253,253) 100%);
+	border: 1px solid #A09578;
 	box-shadow: inset 0 2px 2px 0px #FFF, inset 0 -4px 2px -3px #9B9979, 0 1px 2px 0px #8D945C;
 }
 
+.circle-button.light-grey:hover {
+	background: linear-gradient(to bottom, rgb(220, 220, 220) 1%,rgb(253,253,253) 100%);
+}
+
+.circle-button.light-blue:hover {
+	background: linear-gradient(to bottom, rgb(212, 242, 252) 1%,rgb(253,253,253) 100%);
+}
+
+.circle-button.light-yellow:hover {
+	background: linear-gradient(to bottom, rgb(255, 255, 210) 1%,rgb(253,253,253) 100%);
+}
+
 .gradient {
+	height: 60;
 	margin-right: 50px;
 	display: inline-block;
 }
 
 .gradient-button {
+	height: 58px;
 	color: #FFF;
 	border-radius: 6px;
-	line-height: 2.3em;
-	font-size: 1.5em;
+	line-height: 3em;
+	font-size: 1.2em;
 	text-align: center;
-	padding: 15px;
+	padding: 0px 15px;
 	border: 1px solid rgb(211, 144, 60);
 	background: linear-gradient(to bottom, rgba(247,234,0,1) 1%,rgba(255,175,75,1) 100%);
 	box-shadow: inset 0px 4px 3px -2px rgb(238, 235, 206);
 	text-shadow: 0 1px 1px rgb(179, 122, 51);
 }
 
+.gradient-button:hover {
+	background-image: linear-gradient(to bottom, rgba(248, 248, 0, 1) 1%,rgba(255,175,75,1) 100%);
+}
 
+.gradient-button:active {
+	height: 57px;
+	margin-top: 1px;
+	line-height: 3em;
+	box-shadow: inset 0px 3px 3px -2px rgb(195, 175, 140);
+}
 
+/* ribbon :: ribbon :: ribbon :: ribbon :: ribbon :: */
 
+.ribbon {
+	position: relative;
+	z-index: 1;
+}
+
+.ribbon-right-side {
+	position: relative;
+	display: inline-block;
+	padding: 8px 11px;
+	color:  #FFF;
+	background: #FDD300;
+	border-bottom: 1px solid #D39000;
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 0 #B68800;
+}
+
+.ribbon-left-side {
+	padding: 33px 3px 0 4px;
+	background: #FDD300;
+	display: inline-block;
+
+}
+
+.ribbon-left-side:before {
+	 content: "";
+	 position: absolute;
+	 display: block;
+	 border-style: solid;
+	 border-color: #FDD300 transparent transparent transparent;
+	 left: 0;
+	 border-width: 7px 0 0 7px;
+}
 
 
 
