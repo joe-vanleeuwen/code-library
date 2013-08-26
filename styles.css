@@ -294,8 +294,60 @@ nav a {
 	 border-width: 7px 0 0 7px;
 }
 
+/* modal :: modal :: modal :: modal */
 
+.modal-container {
+	height: 400px;
+	position: relative;
+	display: block;
+}
 
+.modal-background{
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	background: #000;
+	visibility: hidden;
+	z-index: 100;
+	-webkit-transition: all .75s ease;
+}
+
+.modal-box {
+	
+	height: 70px;
+	width: 130px;
+	margin: 150px auto 0;
+	border-radius: 6px;
+	background: #FFFFFF;
+	color: #000;
+	opacity: 0;
+	padding: 20px;
+	z-index: 100;
+	visibility: hidden;
+	-webkit-transform: rotate(8deg);
+	-webkit-transition: all .75s ease;
+
+						
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.modal-background-active {
+	visibility: visible;
+	opacity: .5;
+}
+
+.modal-box-active {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1.3);
+}
 
 
 
